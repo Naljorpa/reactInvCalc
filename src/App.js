@@ -5,6 +5,17 @@ import ResultsTable from './components/ResultsTable/ResultsTable';
 
 
 function App() {
+
+  const saveInvestingDataHandler = (enteredInvestingData) => {
+    const investingData = {
+        ...enteredInvestingData,
+        id: Math.random().toString()
+    }
+
+    console.log(investingData);
+}
+
+
   const calculateHandler = (userInput) => {
     // Should be triggered when form is submitted
     // You might not directly want to bind it to the submit event on the form though...
@@ -36,7 +47,7 @@ function App() {
     <div>
 
       <Header/>
-      <UserInput/>
+      <UserInput onSaveInvestingData = {saveInvestingDataHandler}  />
 
       {/* Todo: Show below table conditionally (only once result data is available) */}
       {/* Show fallback text if no data is available */}
