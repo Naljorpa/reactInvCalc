@@ -1,0 +1,16 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+/.vscode
+
+# Temporary files
+# ---------------
+
+/node_modules/
+package-lock.json
