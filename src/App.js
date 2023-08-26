@@ -47,7 +47,7 @@ function App() {
     <div>
 
       <Header/>
-      <UserInput onSaveInvestingData = {saveInvestingDataHandler}  />
+      <UserInput onSaveInvestingData = {saveInvestingDataHandler} />
 
       {/* Todo: Show below table conditionally (only once result data is available) */}
       {/* Show fallback text if no data is available */}
