@@ -45,9 +45,10 @@ const UserInput = (props) => {
       expectedReturn: userInput['expected-return'],
       duration: userInput['duration'],
     }
+    
 
     props.onSaveInvestingData(investingData);
-    
+
     setUserInput(initialUserInput);
   };
 
