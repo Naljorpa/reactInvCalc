@@ -6,7 +6,7 @@ import ResultsTable from './components/ResultsTable/ResultsTable';
 
 function App() {
 
-  const [userInput, setUserInput] = useState([]);
+  const [userInput, setUserInput] = useState(null);
 
   const yearlyData = []; // per-year results
 
@@ -37,10 +37,10 @@ function App() {
       <Header />
       <UserInput onSaveInvestingData={calculateHandler} />
       {yearlyData.length > 0 ? (
-        <ResultsTable yearlyData={yearlyData} />
+        <ResultsTable yearlyData={yearlyData} initialInvestment = {userInput.currentSavings}/>
       ) : (
         <p>No data available yet.</p>
-      )}
+      ) }
     </div>
   );
 }
