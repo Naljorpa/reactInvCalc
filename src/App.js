@@ -39,7 +39,7 @@ function App() {
       {yearlyData.length > 0 ? (
         <ResultsTable yearlyData={yearlyData} initialInvestment = {userInput.currentSavings}/>
       ) : (
-        <p>No data available yet.</p>
+        <p style={{textAlign: 'center'}}>No data available yet.</p>
       ) }
     </div>
   );
